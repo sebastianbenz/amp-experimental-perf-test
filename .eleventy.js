@@ -1,10 +1,12 @@
 const ampPlugin = require("@ampproject/eleventy-plugin-amp");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(ampPlugin, {
+    key: "optimized",
     imageOptimization: true,
     filter: /^.*optimizer.*$/
   });
   eleventyConfig.addPlugin(ampPlugin, {
+    key: "experimental",
     imageOptimization: true,
     filter: /^.*experimental.*$/,
     ampRuntimeHost:
