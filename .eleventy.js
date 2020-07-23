@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
     filter: /^.*experimental.*$/,
     ampRuntimeHost:
       process.env.ENV === "prod"
-        ? "https://amp-eleventy-demo.web.app/"
+        ? "https://hungry-shockley-fb7242.netlify.app/"
         : "http://localhost:8080",
     downloadAmpRuntime: true,
     validation: false,
