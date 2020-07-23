@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
         : "http://localhost:8080",
     downloadAmpRuntime: true,
     validation: false,
-    experimentEsm: true,
+    //experimentEsm: true,
     experimentImg: true
   });
   eleventyConfig.addPassthroughCopy("img");
