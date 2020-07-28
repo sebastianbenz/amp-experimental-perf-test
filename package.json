@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ENV=prod eleventy",
+    "build": "ENV=prod eleventy && node optimize.js",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
@@ -14,6 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@ampproject/eleventy-plugin-amp": "^0.5.1"
+    "@ampproject/eleventy-plugin-amp": "^0.5.1",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^6.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-overwrite": "^7.0.1"
   }
 }
