@@ -6,6 +6,14 @@ module.exports = function (eleventyConfig) {
     filter: /^.*optimizer.*$/
   });
   eleventyConfig.addPlugin(ampPlugin, {
+    key: "optimized preview",
+    imageOptimization: true,
+    filter: /^.*optimizer-preview.*$/,
+    validation: false,
+    experimentEsm: true,
+    experimentImg: true
+  });
+  eleventyConfig.addPlugin(ampPlugin, {
     key: "experimental",
     imageOptimization: true,
     filter: /^.*experimental.*$/,
