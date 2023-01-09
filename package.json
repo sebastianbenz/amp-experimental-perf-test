@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^1.0.2",
     "@ampproject/eleventy-plugin-amp": "^0.5.1",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^6.0.0",
